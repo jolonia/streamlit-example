@@ -16,7 +16,7 @@ div[data-baseweb="input"] input[type="number"] {
 </style>
 """
 
-#
+## CSS stilini uygula
 st.markdown(custom_css, unsafe_allow_html=True)
 
 with col1:
