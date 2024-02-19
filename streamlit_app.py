@@ -7,15 +7,16 @@ st.title("VS Santa Monica and totals")
 
 col1, col2, col3 = st.columns([0.3, 0.3, 0.4])
 
+
 custom_css = """
 <style>
 div[data-baseweb="input"] input[type="number"] {
-    width: 70px;  /* minimize icons*/
+    width: 70px;  /* İstediğiniz genişliği burada belirleyin */
 }
 </style>
 """
 
-# CSS apply z style
+#
 st.markdown(custom_css, unsafe_allow_html=True)
 
 with col1:
