@@ -21,21 +21,22 @@ st.markdown(custom_css, unsafe_allow_html=True)
 
 with col1:
     gal, tr = st.columns([0.5, 0.5])
-    gal_value = gal.number_input("BELMONT", min_value=0, max_value=10, step=1)
-    tr_value = tr.number_input("ST. MONICA", min_value=0, max_value=10, step=1)
+    gal_value = gal.number_input("BELMONT", min_value=0, max_value=10, step=1, key = "1")
+    tr_value = tr.number_input("ST MONICA", min_value=0, max_value=10, step=1, key = "2")
     text = ''' --- '''
     st.markdown(text)
     hs5, as5 = st.columns([0.5, 0.5])
-    hir_value = hs5.number_input("Aztecs", min_value=0, max_value=10, step=1)
-    erm_value = as5.number_input("ST. MONICA", min_value=0, max_value=10, step=1)
+    hir_value = hs5.number_input("Aztecs", min_value=0, max_value=10, step=1, key = "3")
+    erm_value = as5.number_input("ST MONICA", min_value=0, max_value=10, step=1, key = "4")
     st.markdown(text)
     hs8, as8 = st.columns([0.5, 0.5])
-    rom_value = hs8.number_input("EAGLE ROCK", min_value=0, max_value=10, step=1)
-    swi_value = as8.number_input("ST. MONICA", min_value=0, max_value=10, step=1)
+    rom_value = hs8.number_input("EAGLE ROCK", min_value=0, max_value=10, step=1, key = "5")
+    swi_value = as8.number_input("ST MONICA", min_value=0, max_value=10, step=1, key = "6")
     st.markdown(text)
     hs9, as9 = st.columns([0.5, 0.5])
-    ceb_value = hs9.number_input("LIFE", min_value=0, max_value=10, step=1)
-    hol_value = as9.number_input("🇳🇱 Hollanda", min_value=0, max_value=10, step=1)
+    ceb_value = hs9.number_input("LIFE", min_value=0, max_value=10, step=1, key="7")
+    hol_value = as9.number_input("🇳🇱 Hollanda", min_value=0, max_value=10, step=1, key = "8")
+
 
 with col2:
     data = {
