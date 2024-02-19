@@ -27,7 +27,7 @@ with col1:
     st.markdown(text)
     hs5, as5 = st.columns([0.5, 0.5])
     hir_value = hs5.number_input("Aztecs", min_value=0, max_value=10, step=1, key = "3")
-    erm_value = as5.number_input("ST MONICA", min_value=0, max_value=10, step=1, key = "4")
+    erm_value = as5.number_input("ST MONICA", min_value=0, max_value=10, step=1, key = "10")
     st.markdown(text)
     hs8, as8 = st.columns([0.5, 0.5])
     rom_value = hs8.number_input("EAGLE ROCK", min_value=0, max_value=10, step=1, key = "5")
